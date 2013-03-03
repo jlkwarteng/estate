@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real Estate Engine By Jeremiah Leslie Kwarteng</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><%= link_to('Properties',"/properties") %></li>
+				<li><%= link_to('Agents', '/agents/all')%></li>
+				<li><%= link_to('Sign Up', '/signup') %></li>
+				<li><%= link_to('Login', '/login') %></li>
+		</nav>
+	</header>
+
+<%= yield %>
+
+</body>
+</html>
